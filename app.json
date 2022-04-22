@@ -17,12 +17,23 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.uberclone",
+      "config": {
+        "googleMapsApiKey" : "AIzaSyBsxV7v03HQxzPDrEIHwbHskvgTM0ec8R0"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.uberclone",
+      "config" :{
+        "googleMaps":{
+          "apiKey":"AIzaSyBsxV7v03HQxzPDrEIHwbHskvgTM0ec8R0"
+        },
+        "permissions":["ACCESS_COARSE_LOCATION","ACCESS_FINE_LOCATION","FOREGROUND_SERVICE"]
       }
     },
     "web": {
